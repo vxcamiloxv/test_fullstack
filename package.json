@@ -1,0 +1,50 @@
+{
+  "name": "testFullStack",
+  "version": "1.0.0",
+  "description": "Test FullStack Camilo QS",
+  "author": "Camilo QS",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/vxcamiloxv/test_fullstack/"
+  },
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "angular": "1.3.20",
+    "angular-animate": "1.3.20",
+    "angular-i18n": "1.3.20",
+    "angular-messages": "^1.3.20",
+    "angular-route": "1.3.20",
+    "angular-sanitize": "1.3.20",
+    "bootstrap-less": "^3.3.8",
+    "lodash": "^3.7.0",
+    "lodash-contrib": "^393.0.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.3.20",
+    "browserify": "^10.2.6",
+    "browserify-shim": "^3.8.9",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "3.7.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "load-grunt-config": "^0.17.1",
+    "time-grunt": "^1.1.1"
+  },
+  "browser": {
+    "l10n": "./WebContent/src/js/libs/utils/l10n.js"
+  },
+  "browserify-shim": {
+    "l10n": "l10n"
+  },
+  "scripts": {
+    "test": "npm run grunt_test",
+    "grunt_test": "node node_modules/.bin/grunt test"
+  }
+}

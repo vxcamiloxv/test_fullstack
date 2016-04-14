@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS test_fullstack;
+USE test_fullstack;
+
+CREATE TABLE IF NOT EXISTS `types` (
+ `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `name` varchar(150) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS `inventory` (
+ `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `name` varchar(150) NOT NULL,
+  `description` varchar(50) NOT NULL,
+  `type_id` int(50) NOT NULL,
+  `unit_price` double NOT NULL,
+  FOREIGN KEY (type_id) REFERENCES types(id)
+);
+
+INSERT INTO types ( `name` ) VALUES ( "Food" );
+INSERT INTO types ( `name` ) VALUES ( "Technology" );
+INSERT INTO types ( `name` ) VALUES ( "Forniture" );

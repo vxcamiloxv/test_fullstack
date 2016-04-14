@@ -1,0 +1,27 @@
+<form autocomplete="off" method="post" name="loginForm" id="loginForm" class="list list-inset"
+      ng-submit="loginForm.$valid && login.sendLogin(auth)" novalidate>
+
+  <div class="ui-field-contain text-center np-b">
+
+    <label class="item item-input" for="username">
+      <input type="text" placeholder="Username" id="username" name="username" ng-minlength="3" ng-maxlength="30"
+             ng-model="login.auth.user" required/>
+    </label>
+
+    <label class="item item-input" for="password">
+      <input type="password" placeholder="Password" id="password" name="password"
+             ng-model="login.auth.pass" ng-minlength="3" ng-maxlength="30" required/>
+    </label>
+
+    <div class="button-group">
+      <input type="submit" value="Login" locale-id="loginBtn" id="btnLogin"
+             class="button button-block button-primary"/>
+
+      <a href="#register" locale-id="register" id="btnRegister" class="button button-block button-primary">
+        Register
+      </a>
+    </div>
+
+  </div>
+
+</form>

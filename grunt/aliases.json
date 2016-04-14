@@ -1,0 +1,22 @@
+{
+  "default": [
+    "concurrent:build1",
+    "concurrent:build2",
+    "concurrent:build3"
+  ],
+  "debug": [
+    "default"
+  ],
+  "devel": [
+    "default",
+    "watch"
+  ],
+  "build": [
+    "concurrent:dist1",
+    "concurrent:dist2",
+    "concurrent:dist3"
+  ],
+  "test": [
+    "concurrent:test"
+  ]
+}
