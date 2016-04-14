@@ -33,6 +33,11 @@ Run grunt for generate js and css builds
 node_modules/.bin/grunt build
 ```
 
+Run JS test
+```shell
+npm test
+```
+
 ## Usage
 
 Import in Eclipse or Generate WAR and Run Tomcat Server

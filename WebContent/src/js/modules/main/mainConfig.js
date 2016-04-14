@@ -1,11 +1,11 @@
 /*global module */
 
-// core/main/mainConfig.js
+// modules/main/mainConfig.js
 //
 // main config to set providers and defined
 // base routes
 //
-// 2015, CPS - Cellular Parking Systems
+// 2016, Camilo QS
 
 (function(){
     "use strict";
