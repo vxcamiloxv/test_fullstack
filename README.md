@@ -28,6 +28,11 @@ Import/Create DB
 mysql -u root -p < database.txt
 ```
 
+Run grunt for generate js and css builds
+```shell
+node_modules/.bin/grunt build
+```
+
 ## Usage
 
 Import in Eclipse or Generate WAR and Run Tomcat Server
