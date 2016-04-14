@@ -1,0 +1,28 @@
+{
+  "es3": false,
+  "indent": 4,
+  "curly": true,
+  "eqeqeq": false,
+  "forin": true,
+  "freeze": true,
+  "immed": true,
+  "latedef": "nofunc",
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonbsp": true,
+  "nonew": true,
+  "plusplus": false,
+
+  "undef": true,
+  "unused": "vars",
+
+  "strict": true,
+  "maxparams": 20,
+  "maxdepth": 10,
+  "maxlen": 120,
+
+  "browser": true,
+  "browserify": true,
+  "node": true
+}
